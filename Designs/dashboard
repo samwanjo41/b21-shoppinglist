@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shopping List</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/layerslider.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <style>
+            .bg-1 {
+                background-color: #1abc9c;
+                /* Green */
+                color: #ffffff;
+            }
+    
+            .bg-2 {
+                background-color: #474e5d;
+                /* Dark Blue */
+                color: #ffffff;
+            }
+    
+            .bg-3 {
+                background-color: #fff;
+                /* White */
+                color: #555555;
+            }
+        </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Menshop</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container bg-1">
+            <h3 align="center" class="section-heading">View All Your shopping lists</h3>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10">
+        <table class="table">
+            <tr><th>Group</th><th>Items</th><th>Update</th></tr>
+            <tr><td><img src="img\elec1.jpg" class="img-thumbnail" alt=""></td><td> 
+                    <ul class="list-group">
+                <a href=""> <li class="list-group-item active">Electronics List</li></a>
+                <li class="list-group-item"></li>
+                <li class="list-group-item">27th Aug</li>
+                <li class="list-group-item"></li>
+            </ul>
+            </td><td> <button class="btn btn-success" id="submit">Save List</button>
+                <button class="btn btn-success" id="clear">Update List</button>
+                <button class="btn btn-success" id="clear">Share List</button></td></tr>
+
+                <tr><td><img src="img\clothes1.jpg" class="img-thumbnail" alt=""></td><td> 
+                        <ul class="list-group">
+                 <a href=""> <li class="list-group-item active">Clothing List</li></a>
+                    <li class="list-group-item"></li>
+                    <li class="list-group-item">27th Aug</li>
+                    <li class="list-group-item"></li>
+                </ul>
+            </td><td> <button class="btn btn-success" id="submit">Save List</button>
+                <button class="btn btn-success" id="clear">Update List</button>
+                <button class="btn btn-success" id="clear">Share List</button></td></tr>
+
+                    <tr><td><img src="img\food.jpg" class="img-thumbnail" alt=""></td><td> 
+                            <ul class="list-group">
+                  <a href=""><li class="list-group-item active">Groceries List</li></a>
+                        <li class="list-group-item"></li>
+                        <li class="list-group-item">27th Aug</li>
+                        <li class="list-group-item"></li>
+                    </ul>
+                </td><td> <button class="btn btn-success" id="submit">Save List</button>
+                    <button class="btn btn-success" id="clear">Update List</button>
+                    <button class="btn btn-success" id="clear">Share List</button></td></tr>
+
+                        <tr><td><img src="img\laundry.jpg" class="img-thumbnail" alt=""></td><td> 
+                                <ul class="list-group">
+                            <a href=""><li class="list-group-item active">Laundry & Cleaning List</li></a>
+                            <li class="list-group-item"></li>
+                            <li class="list-group-item">27th Aug</li>
+                            <li class="list-group-item"></li>
+                        </ul>
+                    </td><td> <button class="btn btn-success" id="submit">Save List</button>
+                        <button class="btn btn-success" id="clear">Update List</button>
+                        <button class="btn btn-success" id="clear">Share List</button></td></tr>           
+        </table>     
+                </div>
+            </div>              
+    </div>    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="copyright-header">Copyright &copy; 2017</span>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a class="twitter wow animated bounceInDown animated animation-delay-3" href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a class="facebook wow animated bounceInDown animated animation-delay-4" href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a class="linkedin wow animated bounceInDown animated animation-delay-5" href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
