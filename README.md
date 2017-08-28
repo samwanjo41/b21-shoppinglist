@@ -1,5 +1,7 @@
 # b21-shoppinglist
+
 =====================
+
 This repo contains a partially functioning version of the shoppinglist web app. The repo contains HTML/CSS files for the user landing page and, the user dashboard and the signup and login pages.The html/css files are only interfaces; their functionalities have not been implemented yet.
 
 Motivation
