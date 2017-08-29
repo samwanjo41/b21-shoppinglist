@@ -1,3 +1,3 @@
-language: python
-python:
-  - "3.6"
+# .travis.yml
+env:
+  CODECLIMATE_REPO_TOKEN: 1234
