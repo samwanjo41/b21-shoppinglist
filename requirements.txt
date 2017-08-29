@@ -3,6 +3,10 @@ Jinja2==2.7.2
 MarkupSafe==0.23
 Werkzeug==0.94
 itsdangerous=0.24
+wsgiref==0.1.2
+Flask-Testing==0.4.2
 flask_sqlalchemy
 blinker
-nose
+
+
+
