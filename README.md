@@ -13,3 +13,12 @@ The idea behind this project is that users will need an application that will en
 Styling
 =====================
 Most of the style work in the app was done using bootstrap, a css framework. The bootstrap framework specifies 'components', higher level UI components composed of more basic HTML tags.
+
+#Flask Application(app folder)
+
+The file app.py is used to run the flask application. To run it use
+
+python app.py  it will run a local webserver on http://127.0.0.1:5000
+All designs created in challenge 1 were deployed to flask
+
+Flask application was deployed on Heroku
