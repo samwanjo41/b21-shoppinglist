@@ -1,4 +1,4 @@
-# b21-shoppinglist
+# b21-shoppinglist    https://travis-ci.org/samwanjo41/b21-shoppinglist.svg?branch=master
 
 
 This repo contains a partially functioning version of the shoppinglist web app. The repo contains HTML/CSS files for the user landing page and, the user dashboard and the signup and login pages.The html/css files are only interfaces; their functionalities have not been implemented yet.
