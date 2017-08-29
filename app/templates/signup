@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sign Up</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/layerslider.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Easyshop</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="about-heading">
+                    <h4 class="subheading">Register</h4>
+                </div>
+                <form>
+                    <input class="form-control" name="username" placeholder="Username" type="text"  value="{{
+                        request.form.username }}" />
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+
+                    <input class="form-control" name="email" placeholder="Email" type="text"  value="{{
+                        request.form.email }}" />
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+
+                    <input class="form-control" name="password" placeholder="Password" type="password"  value="{{
+                        request.form.password }}" />
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+
+                    <input class="form-control" name="repassword" placeholder="Confirm Password" type="password"  value="{{
+                        request.form.password }}" />
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+
+                    <p><input type="checkbox" checked="unchecked"> Remember me
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                        <a href="login.html"> <input type="submit" name="submit" id="submit" value="Register" button type="button" class="btn btn-primary btn-block btn-flat"></a>
+                </form>
+                {% if error %}
+                <p class="error"><strong>Error:</strong> {{ error }} {% endif %} {% for message in get_flashed_messages() %} {{ message }}
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
