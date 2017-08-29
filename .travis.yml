@@ -1,6 +1,6 @@
+language: python
+python:
+ - "2.7"
+install: pip install -r requirements.txt
+script: sh run_travis.sh
 
-language": "python",
-  "python": "3.6",
-  "group": "stable",
-  "dist": "trusty",
-  "os": "windows"
