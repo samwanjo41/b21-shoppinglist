@@ -1,5 +1,8 @@
 # b21-shoppinglist   
+
 [![Build Status](https://travis-ci.org/samwanjo41/b21-shoppinglist.svg?branch=master)](https://travis-ci.org/samwanjo41/b21-shoppinglist)
+
+[![Coverage Status](https://coveralls.io/repos/github/samwanjo41/b21-shoppinglist/badge.svg?branch=master)](https://coveralls.io/github/samwanjo41/b21-shoppinglist?branch=master)
 
 This repo contains a partially functioning version of the shoppinglist web app. The repo contains HTML/CSS files for the user landing page and, the user dashboard and the signup and login pages.The html/css files are only interfaces; their functionalities have not been implemented yet.
 
