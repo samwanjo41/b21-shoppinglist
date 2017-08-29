@@ -4,4 +4,3 @@ MarkupSafe==0.23
 Werkzeug==0.12
 flask_sqlalchemy
 blinker
-nose
