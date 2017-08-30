@@ -21,7 +21,7 @@
     <link href="css/layerslider.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
     <style>
-        .bg-1 {
+        .jumbotron {
             background-color: #1abc9c;
             /* Green */
             color: #ffffff;
@@ -46,7 +46,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Menshop</a>
+                <a class="navbar-brand" href="#">Easyshop</a>
             </div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
@@ -61,107 +61,28 @@
         </div>
     </nav>
     
-    <div class="container-fluid bg-1 text-center">
-        <img src="img\cart1.png" class="img-circle" alt="cart" width="350" height="350">
-        <h3>My Shopping List</h3>
-    </div>
+   <div class="container">
+            <div class="jumbotron">
+                <h1 align="center">My Shopping List</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">
+                <form>
 
-    <br>
-    <div class="row">
-        <div class="col-sm-12 text-center">
-            <h3 align="center" class="section-heading">create your shopping list</h3>
-        </div>
-    </div>
+                    <input class="form-control" name="username" placeholder="Title" type="text" value= />
 
-    <div class="container">
-        <div class="row marketing">
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-5">
-                <ul class="list-group">
-                    <a href="#">
-                        <li class="list-group-item active">Electronics</li>
-                        <li class="list-group-item"><img src="img\electronics.jpg" alt=""></li>
-                        <li class="list-group-item">27th Aug<span class="badge">5</span></li>
-                        <li class="list-group-item">
-                           <input type="text" id="myInput" placeholder="Add Item">
-                        <button class="btn btn-success" id="submit">Submit item</button>
-                        <button class="btn btn-success" id="clear">Clear items</button>
-                        </li>
-                </ul>
-            </div>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
 
-            <div class="col-sm-5">
-                <ul class="list-group">
-                    <li class="list-group-item active">Groceries<span class="badge">5</span></li>
-                    <li class="list-group-item"><img src="img\groceries.jpg" alt=""></li>
-                    <li class="list-group-item"> <input type="text" id="myInput" placeholder="Add Item">
-                        <button class="btn btn-success" id="submit">Submit item</button>
-                        <button class="btn btn-success" id="clear">Clear items</button>            
-            </li>
-            </ul>
-        </div>
-        <div class="c0l-sm-1">
-        </div>
-    </div>
-    </div>
+                   <br> <textarea class="form-control" rows="5" id="comment"></textarea>
 
-    <div class="container">
-        <div class="row marketing">
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-5">
-                <ul class="list-group">
-                    <li class="list-group-item active">Clothing & Accessories<span class="badge">5</span></li>
-                    <li class="list-group-item"><img src="img\clothing.jpg" alt=""></li>
-                    <li class="list-group-item">
-                        <input type="text" id="myInput" placeholder="Add Item">
-                        <button class="btn btn-success" id="submit">Submit item</button>
-                        <button class="btn btn-success" id="clear">Clear items</button>
-                    </li>
-                </ul>
+                   <br><input type="submit" name="submit" id="submit" value="Create" button type="button" class="btn btn-primary btn-block btn-flat">
 
-            </div>
-            
-            <div class="col-sm-5">
-                <ul class="list-group">
-                    <li class="list-group-item active">Literature<span class="badge">5</span></li>
-                    <li class="list-group-item"><img src="img\lit3.jpg" alt=""></li>
-                    <li class="list-group-item"> <input type="text" id="myInput" placeholder="Add Item">
-                        <button class="btn btn-success" id="submit">Submit item</button>
-                        <button class="btn btn-success" id="clear">Clear items</button>            
-            </li>
-            </ul>
+                </form>
+                    </div></div>
             </div>
         </div>
-        <div class="c0l-sm-1">
-            
-    </div>
-    </div>
-    
-    <div class="container">
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create New List</button>
-
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body">
-                    <p></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
-
 
     <footer class="footer">
         <div class="container">
